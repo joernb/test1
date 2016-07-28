@@ -1,0 +1,12 @@
+source: jekyll
+destination: jekyll/_site
+# data_dir: jekyll/_data
+# plugins_dir: jekyll/_plugins
+# layouts_dir: jekyll/_layouts
+# includes_dir: jekyll/_includes
+contentful:
+   spaces:
+      - example: # Jekyll _data folder identifier - Required
+         space: xye9wqr0fbnf        # Required
+         access_token: 388e284e90e7ca07f7ed566a36029cb57111ce06858122454f5f2188837ef0da # Required
+         base_path: "jekyll"

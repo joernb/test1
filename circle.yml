@@ -1,0 +1,12 @@
+## Customize dependencies
+dependencies:
+  override:
+    - bundle install: # note ':' here
+        timeout: 180 # fail if command has no output for 3 minutes
+
+
+## Customize test commands
+test:
+  override:
+    - bundle exec jekyll contentful
+    - bundle exec jekyll build

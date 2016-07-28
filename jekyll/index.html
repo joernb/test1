@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1>Index Page</h1>
+
+<ul>
+   {% for job in site.data.contentful.spaces.example.job %}
+   <li>
+      <h2>{{ job.heading }}</h2>
+   </li>
+   {% endfor %}
+</ul>
