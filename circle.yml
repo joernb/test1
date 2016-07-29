@@ -1,17 +1,24 @@
 machine:
   ruby:
     version:
-      2.2.2
+      2.2.2 # required by bundler
 
 ## Customize dependencies
 dependencies:
-  override:
-    - bundle install: # note ':' here
-        timeout: 180 # fail if command has no output for 3 minutes
-
+   pre:
+      - sudo apt-get install lftp
+   override:
+      - bundle install: # note ':' here
+         timeout: 180 # fail if command has no output for 3 minutes
 
 ## Customize test commands
 test:
   override:
     - bundle exec jekyll contentful
     - bundle exec jekyll build
+
+deployment:
+   staging:
+      branch: master
+         commands:
+            - /bin/bash ./deploy.sh
