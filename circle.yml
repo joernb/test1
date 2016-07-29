@@ -1,7 +1,7 @@
 machine:
-  ruby:
-    version:
-      2.2.2 # required by bundler
+   ruby:
+      version:
+         2.2.2 # required by bundler
 
 ## Customize dependencies
 dependencies:
@@ -13,12 +13,12 @@ dependencies:
 
 ## Customize test commands
 test:
-  override:
-    - bundle exec jekyll contentful
-    - bundle exec jekyll build
+   override:
+      - bundle exec jekyll contentful
+      - bundle exec jekyll build
 
 deployment:
    staging:
       branch: master
-         commands:
-            - /bin/bash ./deploy.sh
+      commands:
+         - /bin/bash ./deploy.sh
