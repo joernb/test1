@@ -1,9 +1,5 @@
 source: jekyll
 destination: jekyll/_site
-# data_dir: jekyll/_data
-# plugins_dir: jekyll/_plugins
-# layouts_dir: jekyll/_layouts
-# includes_dir: jekyll/_includes
 contentful:
    spaces:
       - example: # Jekyll _data folder identifier - Required
