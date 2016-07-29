@@ -1,6 +1,7 @@
 machine:
   ruby:
-    version: rbx-2.2.2
+    version:
+      2.2.2
 
 ## Customize dependencies
 dependencies:
